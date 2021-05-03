@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Neuton:wght@300;400&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
     <title>Design Teardown | Grayscale heat map</title>
   </head>
   <body>
@@ -43,36 +48,53 @@
     <main>
       <div class="wrapper">
         <section class="front-articles">
-          <article class="front-primary-article grid">
+          <article class="front-main-article">
             <div class="float-box">
               <div class="g-high img-box left"></div>
-              <div class="g-normal-plus box small-w normal-text-box"></div>
-              <div class="g-high-plus box title-box"></div>
-              <div class="g-low-plus box small-w small-text-box"></div>
+              <div class="float-box pdl-10">
+                <div class="box">
+                  <p>dolor sit <span class="light-grey">amet</span></p>
+                </div>
+                <div class="mgt-10">
+                  <h1 class="main-title">Lorem ipsum dolor sit</h1>
+                </div>
+                <div class="mgt-20">
+                  <p><span class="light-grey">Lorem</span> ipsum dolor</p>
+                </div>
+              </div>
             </div>
 
-            <div>
-              <div class="g-normal box normal-text-box"></div>
-              <div class="g-normal box normal-text-box"></div>
-              <div class="g-normal box normal-text-box"></div>
-            </div>
-            <div class="g-normal-plus box small-w normal-text-box"></div>
+            <p class="big-w mgt-25">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam
+              magni sed voluptatibus delectus, vitae exercitationem sit, nihil
+              sequi animi
+            </p>
+            <div class="mgt-35">Lorem ipsum</div>
           </article>
 
           <div class="front-seconday-articles">
             <article class="front-article">
               <div class="float-box">
-                <div class="g-normal-plus img-box left"></div>
-                <div class="g-normal box small-text-box"></div>
-                <div class="g-high box title-box"></div>
+                <div class="g-normal-plus img-box img-normal-box left"></div>
+                <div class="box pdl-10">
+                  <p>dicta <span class="light-grey">totam</span> ipsum</p>
+                  <h2 class="title mgt-20">
+                    Vel ex quisquam voluptates ullam rem
+                  </h2>
+                </div>
               </div>
             </article>
 
-            <article class="front-article">
+            <article class="front-article mgt-25">
               <div class="float-box">
-                <div class="g-normal-plus img-box left"></div>
-                <div class="g-normal box small-text-box"></div>
-                <div class="g-high box title-box"></div>
+                <div class="g-normal-plus img-box img-normal-box left"></div>
+                <div class="box pdl-10">
+                  <p>dicta <span class="light-grey">totam</span> ipsum</p>
+                  <h2 class="title mgt-20">
+                    Vel ex quisquam
+                    <span class="tag-text">voluptates</span> ullam rem
+                  </h2>
+                </div>
               </div>
             </article>
           </div>
@@ -80,7 +102,6 @@
             <div class="g-high img-box circle"></div>
             <div class="g-normal box normal-text-box half-w"></div>
             <div class="g-high box title-box big-w"></div>
-            <div class="g-low-plus box normal-text-box big-w"></div>
             <div class="g-low-plus box normal-text-box big-w"></div>
             <div class="g-low-plus box normal-text-box big-w"></div>
             <div class="g-low-plus box normal-text-box big-w"></div>
@@ -92,7 +113,7 @@
           </aside>
         </section>
 
-        <section>
+        <section class="mg-section">
           <section class="guides">
             <div class="container">
               <article class="guide">
@@ -125,7 +146,7 @@
             </div>
           </section>
 
-          <section class="grid-articles">
+          <section class="grid-articles mg-section">
             <h4 class="grid-articles-title g-low title-box"></h4>
             <div class="container">
               <article class="grid-article">
@@ -231,7 +252,7 @@
           </section>
         </section>
 
-        <section class="smashing-more">
+        <section class="smashing-more mg-section">
           <div class="g-normal-plus half-w big-text-box mg-center"></div>
           <div class="g-normal half-w normal-text-box mg-center mgt-20"></div>
           <div class="container-horizontal-scroll">
